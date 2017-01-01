@@ -6,4 +6,4 @@ LABEL org.freenas.interactive="false" \
       org.freenas.autostart="true" \
       org.freenas.port-mappings="80:8080/tcp"
 
-VOLUME /usr/share/nginx/html /etc/nginx/nginx.conf:ro
+VOLUME ["/usr/share/nginx/html", "/etc/nginx/nginx.conf":ro]
