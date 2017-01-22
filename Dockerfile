@@ -10,3 +10,5 @@ RUN \
  apt-get update -y -q && \
  apt-get install -y \
 	fail2ban
+
+COPY filter.d/ /etc/fail2ban/filter.d/
