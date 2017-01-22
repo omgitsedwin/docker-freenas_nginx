@@ -7,5 +7,6 @@ LABEL org.freenas.interactive="false" \
       org.freenas.port-mappings="80:8080/tcp,443:8081/tcp"
 
 RUN \
+ apt-get update -y -q && \
  apt-get install -y \
 	fail2ban
