@@ -12,3 +12,5 @@ RUN \
 	fail2ban
 
 COPY filter.d/ /etc/fail2ban/filter.d/
+
+RUN service fail2ban start
